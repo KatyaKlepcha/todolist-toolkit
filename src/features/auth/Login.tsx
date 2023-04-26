@@ -15,6 +15,7 @@ export const Login = () => {
     const formik = useFormik({
         validate: (values) => {
             if (!values.email) {
+
                 return {
                     email: 'Email is required'
                 }
