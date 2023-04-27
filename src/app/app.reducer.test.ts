@@ -1,4 +1,4 @@
-import {appActions, AppInitialStateType, appReducer} from './app-reducer'
+import { appActions, AppInitialStateType, appReducer } from 'app/app.reducer'
 
 let startState: AppInitialStateType;
 
@@ -11,7 +11,7 @@ beforeEach(() => {
 })
 
 test('correct error message should be set', () => {
-	const endState = appReducer(startState, appActions.setAppError({error:'some error'}))
+	const endState = appReducer(startState, appActions.setAppError({error: 'some error'}))
 	expect(endState.error).toBe('some error');
 })
 
