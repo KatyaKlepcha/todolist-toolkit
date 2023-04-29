@@ -1,0 +1,8 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.isDone {
+  opacity: 0.5;
+}
